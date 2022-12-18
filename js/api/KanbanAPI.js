@@ -105,6 +105,6 @@ function read() {
   return JSON.parse(json)
 }
 
-function save() {
+function save(data) {
   localStorage.setItem("kanban-data", JSON.stringify(data))
 }
