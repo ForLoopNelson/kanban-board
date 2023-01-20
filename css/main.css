@@ -1,12 +1,14 @@
 body {
-  background: rgb(44, 46, 47);
+  background: linear-gradient(rgb(49, 48, 50), rgb(139, 139, 220));
+  height: 100vh;
 }
 
 .kanban {
   display: flex;
   padding: 30px;
   width: 750px;
-  background: rgb(72, 72, 212);
+  /* background: rgb(72, 72, 212); */
+  background: linear-gradient(to right, rgb(72, 72, 212), rgb(139, 139, 219));
   border-radius: 5px;
 }
 
