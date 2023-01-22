@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgb(49, 48, 50), rgb(139, 139, 220));
+  background: rgba(105, 1, 83, 0.4);
   height: 100vh;
 }
 
@@ -8,7 +8,7 @@ body {
   padding: 30px;
   width: 750px;
   /* background: rgb(72, 72, 212); */
-  background: linear-gradient(to right, rgb(72, 72, 212), rgb(139, 139, 219));
+  background: #333;
   border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@ body {
   padding: 10px 0;
   font-size: 16px;
   color: white;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 5px;
   cursor: pointer;
