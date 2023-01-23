@@ -68,7 +68,7 @@ h3 {
 
 .kanban__dropzone--active {
   height: 40px;
-  background: rgba(224, 214, 214, 0.55);
+  background: rgba(183, 85, 236, 0.4);
 }
 
 .kanban__add-item {
