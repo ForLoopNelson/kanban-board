@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/themeColors.css" />
     <title>Kanban Board</title>
   </head>
+
   <body>
+    <input type="radio" id="green" name="colors" value="green" />
+    <input type="radio" id="dark" name="colors" value="dark" />
+    <input type="radio" id="red" name="colors" value="red" />
+    <!-- <input type="radio" id="white" name="colors" value="white" /> -->
+    <input type="radio" id="yellow" name="colors" value="yellow" />
+    <input type="radio" id="blue" name="colors" value="blue" />
+    <input type="radio" id="purple" name="colors" value="purple" checked />
+    <input type="radio" id="olive" name="colors" value="olive" />
+
     <h1 class="title">Your Kanban Board</h1>
     <h3>
       Click +Add button to add an item. Drag and drop items. Double click to
       delete an item.
     </h3>
+    <div class="page-wrapper">
+      <div class="color-palette">
+        <!-- <label for="white"></label> -->
+        <label for="dark"></label>
+        <label for="red"></label>
+        <label for="green"></label>
+        <label for="yellow"></label>
+        <label for="blue"></label>
+        <label for="purple"></label>
+        <label for="olive"></label>
+      </div>
+    </div>
     <div class="kanban"></div>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

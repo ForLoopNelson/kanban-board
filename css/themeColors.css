@@ -1,0 +1,214 @@
+:root {
+  /*WHITE*/
+  --white-bg-color: #fff;
+  --white-secondary-color: rgb(247, 223, 223);
+  --white-text-color: #000;
+  --white-title-color: #000;
+
+  /*DARK*/
+  --dark-bg-color: #434343;
+  --dark-text-color: #000;
+
+  /*RED*/
+  --red-bg-color: #ce8082;
+  --red-text-color: #020202;
+
+  /*GREEN 88ACA4*/
+  --green-bg-color: rgb(136, 172, 164);
+  --green-text-color: #020202;
+
+  /*YELLOW*/
+  --yellow-bg-color: #c49208;
+  --yellow-text-color: #110d02;
+
+  /*BLUE*/
+  --blue-bg-color: #1495b6;
+  --blue-text-color: #000;
+
+  /*PURPLE*/
+  --purple-bg-color: rgba(32, 23, 37, 0.9);
+  --purple-text-color: #000;
+
+  /*OLIVE*/
+  --olive-bg-color: #8b927f;
+  --olive-text-color: #000;
+}
+h1 {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.kanban__column-items,
+.kanban__item-input {
+  color: inherit;
+}
+
+[type="radio"] {
+  position: fixed;
+  left: -9999px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.fa-pen-to-square {
+  color: #fff;
+}
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* .page-wrapper {
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+} */
+
+.color-palette {
+  position: fixed;
+  top: 450px;
+  right: 15px;
+  display: grid;
+  gap: 10px;
+  padding: 8px;
+
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.color-palette label {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-palette label::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+}
+
+/* [id="white"] ~ .page-wrapper [for="white"] {
+  background: var(--white-bg-color);
+} */
+
+[id="dark"] ~ .page-wrapper [for="dark"] {
+  background: var(--dark-bg-color);
+}
+
+[id="red"] ~ .page-wrapper [for="red"] {
+  background: var(--red-bg-color);
+}
+
+[id="green"] ~ .page-wrapper [for="green"] {
+  background: var(--green-bg-color);
+}
+
+[id="yellow"] ~ .page-wrapper [for="yellow"] {
+  background: var(--yellow-bg-color);
+}
+
+[id="blue"] ~ .page-wrapper [for="blue"] {
+  background: var(--blue-bg-color);
+}
+
+[id="purple"] ~ .page-wrapper [for="purple"] {
+  background: var(--purple-bg-color);
+}
+
+[id="olive"] ~ .page-wrapper [for="olive"] {
+  background: var(--olive-bg-color);
+}
+
+/* CHECKBOX HACK STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[type="radio"]:checked ~ .page-wrapper label::before {
+  display: block;
+}
+/* 
+[id="white"]:checked ~ .kanban {
+  color: var(--white-text-color);
+  background: var(--white-bg-color);
+}
+
+[id="white"]:checked ~ .kanban [for="white"]::before {
+  background: var(--white-text-color);
+}
+[id="white-title"]:checked ~ .kanban__column-title {
+  color: var(--white-text-color);
+}
+
+[id="white-title"]:checked ~ .kanban__column-title [for="white"]::before {
+  background: var(--white-text-color);
+} */
+
+[id="dark"]:checked ~ .kanban {
+  color: var(--dark-text-color);
+  background: var(--dark-bg-color);
+}
+
+[id="dark"]:checked ~ .kanban [for="dark"]::before {
+  background: var(--dark-text-color);
+}
+
+[id="red"]:checked ~ .kanban {
+  color: var(--red-text-color);
+  background: var(--red-bg-color);
+}
+
+[id="red"]:checked ~ .kanban [for="red"]::before {
+  background: var(--red-text-color);
+}
+
+[id="green"]:checked ~ .kanban {
+  color: var(--green-text-color);
+  background: var(--green-bg-color);
+}
+
+[id="green"]:checked ~ .kanban [for="green"]::before {
+  background: var(--green-text-color);
+}
+
+[id="yellow"]:checked ~ .kanban {
+  color: var(--yellow-text-color);
+  background: var(--yellow-bg-color);
+}
+
+[id="yellow"]:checked ~ .kanban [for="yellow"]::before {
+  background: var(--yellow-text-color);
+}
+
+[id="blue"]:checked ~ .kanban {
+  color: var(--blue-text-color);
+  background: var(--blue-bg-color);
+}
+
+[id="blue"]:checked ~ .kanban [for="blue"]::before {
+  background: var(--blue-text-color);
+}
+
+[id="purple"]:checked ~ .kanban {
+  color: var(--purple-text-color);
+  background: var(--purple-bg-color);
+}
+
+[id="purple"]:checked ~ .kanban [for="purple"]::before {
+  background: var(--purple-text-color);
+}
+
+[id="olive"]:checked ~ .kanban {
+  color: var(--olive-text-color);
+  background: var(--olive-bg-color);
+}
+
+[id="olive"]:checked ~ .kanban [for="olive"]::before {
+  background: var(--olive-text-color);
+}
