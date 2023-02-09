@@ -18,26 +18,28 @@
     <input type="radio" id="blue" name="colors" value="blue" />
     <input type="radio" id="purple" name="colors" value="purple" checked />
     <input type="radio" id="olive" name="colors" value="olive" />
-
-    <h1 class="title">Your Kanban Board</h1>
-    <h3>
-      Click +Add button to add an item. Drag and drop items. Double click to
-      delete an item.
-    </h3>
     <div class="page-wrapper">
-      <div class="color-palette">
+      <h1 class="title">Your Kanban Board</h1>
+      <h3>
+        Click +Add button to add an item. Drag and drop items. Double click to
+        delete an item.
+      </h3>
+
+      <div class="color-palette title">
         <!-- <label for="white"></label> -->
-        <label for="dark"></label>
+        <label for="purple"></label>
+        <!-- <label for="dark"></label> -->
         <label for="red"></label>
         <label for="green"></label>
         <label for="yellow"></label>
         <label for="blue"></label>
-        <label for="purple"></label>
-        <label for="olive"></label>
-      </div>
-    </div>
-    <div class="kanban"></div>
 
-    <script src="js/main.js" type="module"></script>
+        <!-- <label for="olive"></label> -->
+      </div>
+
+      <div class="kanban"></div>
+
+      <script src="js/main.js" type="module"></script>
+    </div>
   </body>
 </html>
