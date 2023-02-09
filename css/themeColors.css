@@ -14,7 +14,7 @@
   --red-text-color: #020202;
 
   /*GREEN 88ACA4*/
-  --green-bg-color: rgb(136, 172, 164);
+  --green-bg-color: rgb(51, 106, 94);
   --green-text-color: #020202;
 
   /*YELLOW*/
@@ -61,21 +61,22 @@ label {
 
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* .page-wrapper {
+.page-wrapper {
   height: 100vh;
   transition: all 0.3s ease-in-out;
-} */
+}
 
 .color-palette {
   position: fixed;
-  top: 450px;
-  right: 15px;
-  display: grid;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 8px;
 
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .color-palette label {
@@ -96,6 +97,10 @@ label {
   height: 2px;
 }
 
+.kanban {
+  opacity: 0.85;
+  box-shadow: inset 0 1px 9px rgba(0, 0, 0, 0.16), 0 7px 6px rgba(0, 0, 0, 0.55);
+}
 /* [id="white"] ~ .page-wrapper [for="white"] {
   background: var(--white-bg-color);
 } */
@@ -150,65 +155,92 @@ label {
   background: var(--white-text-color);
 } */
 
-[id="dark"]:checked ~ .kanban {
+[id="dark"]:checked ~ .page-wrapper,
+.kanban {
   color: var(--dark-text-color);
   background: var(--dark-bg-color);
 }
 
-[id="dark"]:checked ~ .kanban [for="dark"]::before {
+[id="dark"]:checked ~ .page-wrapper [for="dark"]::before {
   background: var(--dark-text-color);
 }
 
-[id="red"]:checked ~ .kanban {
+[id="red"]:checked ~ .page-wrapper {
   color: var(--red-text-color);
   background: var(--red-bg-color);
 }
 
-[id="red"]:checked ~ .kanban [for="red"]::before {
+[id="red"]:checked ~ .page-wrapper [for="red"]::before {
   background: var(--red-text-color);
 }
 
-[id="green"]:checked ~ .kanban {
+[id="green"]:checked ~ .page-wrapper {
   color: var(--green-text-color);
   background: var(--green-bg-color);
 }
 
-[id="green"]:checked ~ .kanban [for="green"]::before {
+[id="green"]:checked ~ .page-wrapper [for="green"]::before {
   background: var(--green-text-color);
 }
 
-[id="yellow"]:checked ~ .kanban {
+[id="yellow"]:checked ~ .page-wrapper {
   color: var(--yellow-text-color);
   background: var(--yellow-bg-color);
 }
 
-[id="yellow"]:checked ~ .kanban [for="yellow"]::before {
+[id="yellow"]:checked ~ .page-wrapper [for="yellow"]::before {
   background: var(--yellow-text-color);
 }
 
-[id="blue"]:checked ~ .kanban {
+[id="blue"]:checked ~ .page-wrapper {
   color: var(--blue-text-color);
   background: var(--blue-bg-color);
 }
 
-[id="blue"]:checked ~ .kanban [for="blue"]::before {
+[id="blue"]:checked ~ .page-wrapper [for="blue"]::before {
   background: var(--blue-text-color);
 }
 
-[id="purple"]:checked ~ .kanban {
+[id="purple"]:checked ~ .page-wrapper {
   color: var(--purple-text-color);
   background: var(--purple-bg-color);
 }
 
-[id="purple"]:checked ~ .kanban [for="purple"]::before {
+[id="purple"]:checked ~ .page-wrapper [for="purple"]::before {
   background: var(--purple-text-color);
 }
 
-[id="olive"]:checked ~ .kanban {
+[id="olive"]:checked ~ .page-wrapper {
   color: var(--olive-text-color);
   background: var(--olive-bg-color);
 }
 
-[id="olive"]:checked ~ .kanban [for="olive"]::before {
+[id="olive"]:checked ~ .page-wrapper [for="olive"]::before {
   background: var(--olive-text-color);
+}
+
+/* title and color picker Mobile Queries */
+@media (max-width: 796px) {
+  .color-palette {
+    display: flex;
+    justify-content: space-between;
+    top: 780px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px;
+  }
+}
+@media (max-width: 394px) {
+  .color-palette {
+    display: flex;
+    justify-content: space-between;
+    top: 80px;
+    right: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px;
+  }
 }

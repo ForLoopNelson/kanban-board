@@ -28,8 +28,8 @@ h3 {
   display: flex;
   padding: 30px;
   max-width: 2480px;
-  /* background: rgb(72, 72, 212); */
-  background: rgb(39, 39, 39);
+
+  background: rgb(255, 255, 255, 0.2);
   border-radius: 5px;
 
   justify-content: center;
