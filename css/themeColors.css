@@ -17,8 +17,8 @@
   --green-bg-color: rgb(51, 106, 94);
   --green-text-color: #020202;
 
-  /*YELLOW*/
-  --yellow-bg-color: #c49208;
+  /* YELLOW - change yellow keywords to gray */
+  --yellow-bg-color: rgb(169, 169, 169);
   --yellow-text-color: #110d02;
 
   /*BLUE*/
@@ -41,10 +41,10 @@ a {
   color: inherit;
 }
 
-.kanban__column-items,
+/* .kanban__column-items,
 .kanban__item-input {
   color: inherit;
-}
+} */
 
 [type="radio"] {
   position: fixed;
@@ -97,10 +97,6 @@ label {
   height: 2px;
 }
 
-.kanban {
-  opacity: 0.85;
-  box-shadow: inset 0 1px 9px rgba(0, 0, 0, 0.16), 0 7px 6px rgba(0, 0, 0, 0.55);
-}
 /* [id="white"] ~ .page-wrapper [for="white"] {
   background: var(--white-bg-color);
 } */
@@ -155,8 +151,7 @@ label {
   background: var(--white-text-color);
 } */
 
-[id="dark"]:checked ~ .page-wrapper,
-.kanban {
+[id="dark"]:checked ~ .page-wrapper {
   color: var(--dark-text-color);
   background: var(--dark-bg-color);
 }
