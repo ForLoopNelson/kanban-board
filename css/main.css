@@ -28,9 +28,9 @@ h3 {
   display: flex;
   padding: 30px;
   max-width: 2480px;
-
   background: rgb(255, 255, 255, 0.2);
-  border-radius: 5px;
+  border-radius: 30px;
+  box-shadow: -5px 21px 27px #1c1b1b, -8px -5px 24px #f9efef;
 
   justify-content: center;
 }
@@ -69,7 +69,7 @@ h3 {
 
 .kanban__dropzone--active {
   height: 40px;
-  background: rgba(183, 85, 236, 0.4);
+  background: rgba(116, 115, 117, 0.4);
 }
 
 .kanban__add-item {
