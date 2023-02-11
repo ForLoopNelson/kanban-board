@@ -31,7 +31,12 @@ h3 {
   display: flex;
   padding: 30px;
   max-width: 2480px;
-  background: rgb(255, 255, 255, 0.2);
+  /* background: rgb(255, 255, 255, 0.2); */
+  background: linear-gradient(
+    -105deg,
+    rgb(255, 255, 255, 0.1),
+    rgba(244, 239, 239, 0.4)
+  );
   border-radius: 30px;
   box-shadow: -5px 21px 27px #1c1b1b, -12px -6px 20px #f9efef;
 

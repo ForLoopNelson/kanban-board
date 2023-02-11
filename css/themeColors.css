@@ -90,7 +90,12 @@ label {
   padding: 8px;
   border-radius: 20px;
   overscroll-behavior: unset;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(195%);
+  background-color: rgba(17, 25, 40, 0.2);
+
+  border: 1px solid rgba(102, 100, 100, 0.125);
 }
 
 .color-palette label {
@@ -238,6 +243,11 @@ label {
   .kanban__column:not(:last-child) {
     margin-right: 0px;
   }
+
+  .kanban__column-title {
+    padding-top: 8px;
+  }
+
   h3 {
     padding: 0 10px 10px 10px;
   }
