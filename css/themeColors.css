@@ -235,6 +235,12 @@ label {
     gap: 10px;
     padding: 8px;
   }
+  .kanban__column:not(:last-child) {
+    margin-right: 0px;
+  }
+  h3 {
+    padding: 0 10px 10px 10px;
+  }
 }
 @media (max-width: 420px) {
   .color-palette {
