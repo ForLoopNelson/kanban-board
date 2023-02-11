@@ -63,6 +63,7 @@ label {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-wrapper {
   height: 100vh;
+  overflow-y: auto;
   transition: all 0.3s ease-in-out;
 }
 
@@ -221,8 +222,6 @@ label {
     justify-content: space-between;
     top: 780px;
     right: 20px;
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     padding: 8px;
   }
@@ -231,10 +230,8 @@ label {
   .color-palette {
     display: flex;
     justify-content: space-between;
-    top: 80px;
+    top: 65px;
     right: 65px;
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     padding: 8px;
   }
