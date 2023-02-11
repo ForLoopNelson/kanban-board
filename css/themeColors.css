@@ -17,9 +17,9 @@
   --green-bg-color: rgb(51, 106, 94);
   --green-text-color: #020202;
 
-  /* YELLOW - change yellow keywords to gray */
-  --yellow-bg-color: rgb(169, 169, 169);
-  --yellow-text-color: #110d02;
+  /* GRAY*/
+  --gray-bg-color: rgb(169, 169, 169);
+  --gray-text-color: #110d02;
 
   /*BLUE*/
   --blue-bg-color: #1495b6;
@@ -68,19 +68,6 @@ label {
   transition: all 0.3s ease-in-out;
 }
 
-/* .color-palette {
-  position: sticky;
-  top: 20px;
-  
-  display: flex;
-  max-width: 21%;
-  margin-bottom: 26px;
-  gap: 27px;
-  padding: 8px;
-  border-radius: 20px;
-  overscroll-behavior: unset;
-  background: rgba(0, 0, 0, 0.5);
-} */
 .color-palette {
   top: 20px;
   display: flex;
@@ -89,7 +76,7 @@ label {
   gap: 27px;
   padding: 8px;
   border-radius: 20px;
-  overscroll-behavior: unset;
+
   /* background: rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(40px) saturate(180%);
   -webkit-backdrop-filter: blur(40px) saturate(195%);
@@ -128,8 +115,8 @@ label {
   background: var(--green-bg-color);
 }
 
-[id="yellow"] ~ .page-wrapper [for="yellow"] {
-  background: var(--yellow-bg-color);
+[id="gray"] ~ .page-wrapper [for="gray"] {
+  background: var(--gray-bg-color);
 }
 
 [id="blue"] ~ .page-wrapper [for="blue"] {
@@ -193,13 +180,13 @@ label {
   background: var(--green-text-color);
 }
 
-[id="yellow"]:checked ~ .page-wrapper {
-  color: var(--yellow-text-color);
-  background: var(--yellow-bg-color);
+[id="gray"]:checked ~ .page-wrapper {
+  color: var(--gray-text-color);
+  background: var(--gray-bg-color);
 }
 
-[id="yellow"]:checked ~ .page-wrapper [for="yellow"]::before {
-  background: var(--yellow-text-color);
+[id="gray"]:checked ~ .page-wrapper [for="gray"]::before {
+  background: var(--gray-text-color);
 }
 
 [id="blue"]:checked ~ .page-wrapper {
@@ -240,9 +227,6 @@ label {
     gap: 10px;
     padding: 8px;
   }
-  .kanban__column:not(:last-child) {
-    margin-right: 0px;
-  }
 
   .kanban__column-title {
     padding-top: 8px;
@@ -261,6 +245,9 @@ label {
     gap: 10px;
     padding: 8px;
     max-width: 40%;
+  }
+  .kanban__column:not(:last-child) {
+    margin-right: 0px;
   }
 }
 @media (max-width: 860px) and (orientation: landscape) {
