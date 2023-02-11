@@ -2,9 +2,8 @@
   box-sizing: border-box;
   margin: 0;
 }
-
-body {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
 .title {
