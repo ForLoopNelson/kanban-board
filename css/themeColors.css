@@ -68,16 +68,28 @@ label {
   transition: all 0.3s ease-in-out;
 }
 
-.color-palette {
-  position: fixed;
+/* .color-palette {
+  position: sticky;
   top: 20px;
-  right: 20px;
+  
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  max-width: 21%;
+  margin-bottom: 26px;
+  gap: 27px;
   padding: 8px;
-
   border-radius: 20px;
+  overscroll-behavior: unset;
+  background: rgba(0, 0, 0, 0.5);
+} */
+.color-palette {
+  top: 20px;
+  display: flex;
+  max-width: 21%;
+  margin-bottom: 26px;
+  gap: 27px;
+  padding: 8px;
+  border-radius: 20px;
+  overscroll-behavior: unset;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -98,10 +110,6 @@ label {
   width: 10px;
   height: 2px;
 }
-
-/* [id="white"] ~ .page-wrapper [for="white"] {
-  background: var(--white-bg-color);
-} */
 
 [id="dark"] ~ .page-wrapper [for="dark"] {
   background: var(--dark-bg-color);
@@ -217,17 +225,18 @@ label {
 }
 
 /* title and color picker Mobile Queries */
-@media (max-width: 796px) {
+@media (max-width: 830px) {
   .color-palette {
     display: flex;
+
     justify-content: space-between;
-    top: 780px;
+    top: 70px;
     right: 20px;
     gap: 10px;
     padding: 8px;
   }
 }
-@media (max-width: 394px) {
+@media (max-width: 420px) {
   .color-palette {
     display: flex;
     justify-content: space-between;
@@ -235,5 +244,17 @@ label {
     right: 65px;
     gap: 10px;
     padding: 8px;
+    max-width: 40%;
+  }
+}
+@media (max-width: 860px) and (orientation: landscape) {
+  .color-palette {
+    display: flex;
+    justify-content: space-between;
+    top: 65px;
+    right: 65px;
+    gap: 10px;
+    padding: 8px;
+    max-width: 30%;
   }
 }
